@@ -3,37 +3,91 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gelateria Bella Vita</title>
+  <title>Eis da Rosario</title>
+
+  <!-- Font locali -->
   <style>
-    body { font-family: sans-serif; max-width: 800px; margin: auto; padding: 20px; background: #fef9f4; color: #333; }
-    h1 { color: #d2691e; }
-    .menu { background: #fff0e1; padding: 15px; border-radius: 8px; margin-top: 20px; }
+    @font-face {
+      font-family: 'Malista';
+      src: url('Malista.otf') format('opentype');
+    }
+
+    @font-face {
+      font-family: 'Hadley';
+      src: url('Hadley.otf') format('opentype');
+    }
+
+    body {
+      font-family: 'Hadley', sans-serif;
+      background: #fff7f0;
+      color: #333;
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-family: 'Malista', cursive;
+      font-size: 3em;
+      color: #d55c4b;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .menu {
+      background: #fff0e0;
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .menu ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .menu li {
+      margin: 10px 0;
+      font-size: 1.2em;
+    }
+
+    h2 {
+      color: #aa3e2e;
+      margin-top: 40px;
+    }
+
+    .info {
+      margin-top: 30px;
+    }
   </style>
 </head>
 <body>
-  <h1>Gelateria Bella Vita</h1>
-  <p>Benvenuti nella nostra gelateria artigianale! ❤️</p>
 
-  <h2>Chi siamo</h2>
-  <p>Da oltre 10 anni serviamo gelati freschi e genuini con ingredienti naturali.</p>
+  <h1>Eis da Rosario</h1>
+  <p style="text-align: center;">Gelati artigianali, sapori autentici 🍦</p>
 
-  <h2>Il Menù</h2>
+  <h2>Menù gusti</h2>
   <div class="menu">
     <ul>
-      <li>🍦 Vaniglia</li>
       <li>🍫 Cioccolato</li>
+      <li>🍦 Vaniglia</li>
       <li>🍓 Fragola</li>
       <li>🥭 Mango</li>
+      <li>🍋 Limone</li>
       <li>🥥 Cocco</li>
     </ul>
   </div>
 
-  <h2>Contatti</h2>
-  <p>📍 Via Roma 123, Milano<br />
-     📞 0123-456789<br />
-     📧 info@bellavita.it</p>
+  <div class="info">
+    <h2>Contatti</h2>
+    <p>📍 Via Roma 123, Milano<br>
+       📞 0123 456789<br>
+       📧 info@eisdarosario.it</p>
 
-  <h2>Orari</h2>
-  <p>Lun-Dom: 12:00 - 22:00</p>
+    <h2>Orari di apertura</h2>
+    <p>Lunedì - Domenica: 12:00 - 22:00</p>
+  </div>
+
 </body>
 </html>
