@@ -19,8 +19,8 @@
 
     body {
       font-family: 'Hadley', sans-serif;
-      background: #fff7f0;
-      color: #333;
+      background: #ffffff; /* Colore di sfondo bianco */
+      color: #000000; /* Colore del testo nero */
       max-width: 900px;
       margin: auto;
       padding: 20px;
@@ -29,7 +29,7 @@
     h1 {
       font-family: 'Malista', cursive;
       font-size: 3em;
-      color: #d55c4b;
+      color: #73cacb; /* Colore del titolo */
       text-align: center;
       margin-top: 30px;
     }
@@ -50,22 +50,36 @@
     .menu li {
       margin: 10px 0;
       font-size: 1.2em;
+      color: #000000; /* Colore del testo nero per gli item del menù */
     }
 
     h2 {
-      color: #aa3e2e;
+      color: #73cacb; /* Colore per le voci "Kontakt" e "Menù" */
       margin-top: 40px;
     }
 
     .info {
       margin-top: 30px;
     }
+
+    /* Media Query per mobile */
+    @media (max-width: 600px) {
+      body {
+        padding: 15px;
+      }
+      h1 {
+        font-size: 2em;
+      }
+      .menu li {
+        font-size: 1em;
+      }
+    }
   </style>
 </head>
 <body>
 
   <h1>Eis da Rosario</h1>
-  <p style="text-align: center;">Gelati artigianali, sapori autentici 🍦</p>
+  <p style="text-align: center; color: #000000;">Gelati artigianali, sapori autentici 🍦</p>
 
   <h2>Menù gusti</h2>
   <div class="menu">
