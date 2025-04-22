@@ -3,10 +3,105 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gelateria Bella Vita</title>
+  <title>Eis da Rosario</title>
+
+  <!-- Font locali -->
+  <style>
+    @font-face {
+      font-family: 'Malista';
+      src: url('Malista.otf') format('opentype');
+    }
+
+    @font-face {
+      font-family: 'Hadley';
+      src: url('Hadley.otf') format('opentype');
+    }
+
+    body {
+      font-family: 'Hadley', sans-serif;
+      background: #ffffff; /* Colore di sfondo bianco */
+      color: #000000; /* Colore del testo nero */
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-family: 'Malista', cursive;
+      font-size: 3em;
+      color: #73cacb; /* Colore del titolo */
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .menu {
+      background: #fff0e0;
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .menu ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .menu li {
+      margin: 10px 0;
+      font-size: 1.2em;
+      color: #000000; /* Colore del testo nero per gli item del menù */
+    }
+
+    h2 {
+      color: #73cacb; /* Colore per le voci "Kontakt" e "Menù" */
+      margin-top: 40px;
+    }
+
+    .info {
+      margin-top: 30px;
+    }
+
+    /* Media Query per mobile */
+    @media (max-width: 600px) {
+      body {
+        padding: 15px;
+      }
+      h1 {
+        font-size: 2em;
+      }
+      .menu li {
+        font-size: 1em;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Gelateria Bella Vita</h1>
-  <p>Benvenuti nel nostro sito! 🍦</p>
+
+  <h1>Eis da Rosario</h1>
+  <p style="text-align: center; color: #000000;">Gelati artigianali, sapori autentici 🍦</p>
+
+  <h2>Menù gusti</h2>
+  <div class="menu">
+    <ul>
+      <li>🍫 Cioccolato</li>
+      <li>🍦 Vaniglia</li>
+      <li>🍓 Fragola</li>
+      <li>🥭 Mango</li>
+      <li>🍋 Limone</li>
+      <li>🥥 Cocco</li>
+    </ul>
+  </div>
+
+  <div class="info">
+    <h2>Kontakt</h2>
+    <p>📍 Hermannstraße 1, 15370 Petershagen/Eggersdorf<br>
+       📞 01578 4230125<br>
+       📧 infoeiscafedarosario@gmail.com</p>
+
+    <h2>Öffnungszeiten</h2>
+    <p>Montag  - Sonntag: 11:00 - 18:00</p>
+  </div>
+
 </body>
 </html>
