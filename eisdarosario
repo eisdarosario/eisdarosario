@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gelateria Bella Vita</title>
+  <style>
+    body { font-family: sans-serif; max-width: 800px; margin: auto; padding: 20px; background: #fef9f4; color: #333; }
+    h1 { color: #d2691e; }
+    .menu { background: #fff0e1; padding: 15px; border-radius: 8px; margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h1>Gelateria Bella Vita</h1>
+  <p>Benvenuti nella nostra gelateria artigianale! ❤️</p>
+
+  <h2>Chi siamo</h2>
+  <p>Da oltre 10 anni serviamo gelati freschi e genuini con ingredienti naturali.</p>
+
+  <h2>Il Menù</h2>
+  <div class="menu">
+    <ul>
+      <li>🍦 Vaniglia</li>
+      <li>🍫 Cioccolato</li>
+      <li>🍓 Fragola</li>
+      <li>🥭 Mango</li>
+      <li>🥥 Cocco</li>
+    </ul>
+  </div>
+
+  <h2>Contatti</h2>
+  <p>📍 Via Roma 123, Milano<br />
+     📞 0123-456789<br />
+     📧 info@bellavita.it</p>
+
+  <h2>Orari</h2>
+  <p>Lun-Dom: 12:00 - 22:00</p>
+</body>
+</html>
