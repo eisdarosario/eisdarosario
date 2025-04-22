@@ -69,6 +69,7 @@
       font-size: 2.5em;
       color: #73cacb;
       margin-bottom: 20px;
+      text-align: center;
     }
 
     .menu-box {
@@ -97,20 +98,25 @@
       border-bottom: none;
     }
 
-    .item-name {
+    .menu-text {
+      width: 85%;
+    }
+
+    .menu-text strong {
       font-weight: bold;
       color: #73cacb;
       font-size: 1.1em;
-      width: 40%;
+      display: block;
     }
 
-    .item-desc {
+    .menu-text small {
       font-size: 0.9em;
       color: #000000;
-      width: 45%;
+      display: block;
+      margin-top: 5px;
     }
 
-    .item-price {
+    .menu-price {
       font-size: 1em;
       color: #73cacb;
       width: 15%;
@@ -118,18 +124,42 @@
       white-space: nowrap;
     }
 
+    .footer-banner {
+      background-color: #fff2d1;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 50px;
+    }
+
+    .footer-banner h2 {
+      font-family: 'Malista', cursive;
+      color: #73cacb;
+      font-size: 1.8em;
+      margin-bottom: 15px;
+    }
+
+    .footer-banner p {
+      color: #000000;
+      margin: 8px 0;
+      font-size: 1em;
+    }
+
+    .footer-banner a {
+      color: #000000;
+      text-decoration: none;
+    }
+
     footer {
       background-color: #fff2d1;
       text-align: center;
       padding: 20px;
-      margin-top: 40px;
+      margin-top: 0;
     }
 
     footer p {
       font-size: 1.1em;
       margin: 0;
     }
-
   </style>
 </head>
 <body>
@@ -141,91 +171,51 @@
   <div class="navbar">
     <a href="index.html">Home</a>
     <a href="menu.html">Menu</a>
-    <a href="kontakt.html">Kontakt</a>
   </div>
 
   <div class="content">
     <h2>Menu</h2>
     <div class="menu-box">
 
+      <!-- Waffel oder Becher -->
       <div class="menu-section">
-      <h3>🍨 Waffel oder Becher?</h3>
-      <div class="menu-item">
-        <div class="menu-text"><strong>1 Kugel Eis</strong></div>
-        <div class="menu-price">1,90 €</div>
+        <h3>🍨 Waffel oder Becher?</h3>
+        <div class="menu-item"><div class="menu-text"><strong>1 Kugel Eis</strong></div><div class="menu-price">1,90 €</div></div>
+        <div class="menu-item"><div class="menu-text"><strong>2 Kugeln Eis</strong></div><div class="menu-price">3,80 €</div></div>
+        <div class="menu-item"><div class="menu-text"><strong>3 Kugeln Eis</strong></div><div class="menu-price">5,70 €</div></div>
       </div>
-      <div class="menu-item">
-        <div class="menu-text"><strong>2 Kugeln Eis</strong></div>
-        <div class="menu-price">3,80 €</div>
-      </div>
-      <div class="menu-item">
-        <div class="menu-text"><strong>3 Kugeln Eis</strong></div>
-        <div class="menu-price">5,70 €</div>
-      </div>
-    </div>
 
-    <div class="menu-section">
-      <h3>🍧 Eisbecheren</h3>
-      <div class="menu-item">
-        <div class="menu-text"><strong>Baileysbecher</strong><small>gemischtes Eis, Baileys, Sauce & Sahne</small></div>
-        <div class="menu-price">8,00 €</div>
+      <!-- Eisbecheren -->
+      <div class="menu-section">
+        <h3>🍧 Eisbecheren</h3>
+        <div class="menu-item"><div class="menu-text"><strong>Baileysbecher</strong><small>gemischtes Eis, Baileys, Sauce & Sahne</small></div><div class="menu-price">8,00 €</div></div>
+        <div class="menu-item"><div class="menu-text"><strong>Amarenabecher</strong><small>gemischtes Eis, Amarena-Kirschen, Amarena-Sauce & Sahne</small></div><div class="menu-price">8,00 €</div></div>
+        <div class="menu-item"><div class="menu-text"><strong>Spaghetti Eis</strong><small>Vanilleeis, weiße Schokoladenstreusel & Sahne</small></div><div class="menu-price">8,00 €</div></div>
+        <div class="menu-item"><div class="menu-text"><strong>Kiwibecher</strong><small>gemischtes Eis, frische Kiwi, Kiwi-Sauce & Sahne</small></div><div class="menu-price">8,00 €</div></div>
+        <div class="menu-item"><div class="menu-text"><strong>Banana Split</strong><small>gemischtes Eis, Bananen, Streusel, Schoko-Sauce & Sahne</small></div><div class="menu-price">8,00 €</div></div>
+        <div class="menu-item"><div class="menu-text"><strong>Schokobecher</strong><small>gemischtes Eis, Schoko-Splitter, Schoko-Sauce & Sahne</small></div><div class="menu-price">8,00 €</div></div>
+        <div class="menu-item"><div class="menu-text"><strong>Amarettobecher</strong><small>Alkoholgehalt, gemischtes Eis, Amarettolikör, Amarettokekse, Kokant, Sauce & Sahne</small></div><div class="menu-price">8,00 €</div></div>
+        <div class="menu-item"><div class="menu-text"><strong>Krokokantbecher</strong><small>gemischtes Eis, Krokantssplitter, Karamell-Sauce & Sahne</small></div><div class="menu-price">8,00 €</div></div>
+        <div class="menu-item"><div class="menu-text"><strong>Erdbeerbecher</strong><small>gemischtes Eis, frische Erdbeeren, Erdbeer-Sauce & Sahne</small></div><div class="menu-price">8,00 €</div></div>
+        <div class="menu-item"><div class="menu-text"><strong>Nussbecher</strong><small>gemischtes Eis, gemischte Nüsse, Nuss-Sauce & Sahne</small></div><div class="menu-price">8,00 €</div></div>
+        <div class="menu-item"><div class="menu-text"><strong>Gelber Engel</strong><small>Vanilleeis, Orangensaft, Sahne</small></div><div class="menu-price">4,50 €</div></div>
+        <div class="menu-item"><div class="menu-text"><strong>Eisschokolade</strong><small>Schokoeis, kalter Kakao, Sahne</small></div><div class="menu-price">5,00 €</div></div>
       </div>
-      <div class="menu-item">
-        <div class="menu-text"><strong>Amarenabecher</strong><small>gemischtes Eis, Amarena-Kirschen, Amarena-Sauce & Sahne</small></div>
-        <div class="menu-price">8,00 €</div>
-      </div>
-      <div class="menu-item">
-        <div class="menu-text"><strong>Spaghetti Eis</strong><small>Vanilleeis, weiße Schokoladenstreusel & Sahne</small></div>
-        <div class="menu-price">8,00 €</div>
-      </div>
-      <div class="menu-item">
-        <div class="menu-text"><strong>Kiwibecher</strong><small>gemischtes Eis, frische Kiwi, Kiwi-Sauce & Sahne</small></div>
-        <div class="menu-price">8,00 €</div>
-      </div>
-      <div class="menu-item">
-        <div class="menu-text"><strong>Banana Split</strong><small>gemischtes Eis, Bananen, Streusel, Schoko-Sauce & Sahne</small></div>
-        <div class="menu-price">8,00 €</div>
-      </div>
-      <div class="menu-item">
-        <div class="menu-text"><strong>Schokobecher</strong><small>gemischtes Eis, Schoko-Splitter, Schoko-Sauce & Sahne</small></div>
-        <div class="menu-price">8,00 €</div>
-      </div>
-      <div class="menu-item">
-        <div class="menu-text"><strong>Amarettobecher</strong><small>Alkoholgehalt, gemischtes Eis, Amarettolikör, Amarettokekse, Kokant, Sauce & Sahne</small></div>
-        <div class="menu-price">8,00 €</div>
-      </div>
-      <div class="menu-item">
-        <div class="menu-text"><strong>Krokokantbecher</strong><small>gemischtes Eis, Krokantssplitter, Karamell-Sauce & Sahne</small></div>
-        <div class="menu-price">8,00 €</div>
-      </div>
-      <div class="menu-item">
-        <div class="menu-text"><strong>Erdbeerbecher</strong><small>gemischtes Eis, frische Erdbeeren, Erdbeer-Sauce & Sahne</small></div>
-        <div class="menu-price">8,00 €</div>
-      </div>
-      <div class="menu-item">
-        <div class="menu-text"><strong>Nussbecher</strong><small>gemischtes Eis, gemischte Nüsse, Nuss-Sauce & Sahne</small></div>
-        <div class="menu-price">8,00 €</div>
-      </div>
-      <div class="menu-item">
-        <div class="menu-text"><strong>Gelber Engel</strong><small>Vanilleeis, Orangensaft, Sahne</small></div>
-        <div class="menu-price">4,50 €</div>
-      </div>
-      <div class="menu-item">
-        <div class="menu-text"><strong>Eisschokolade</strong><small>Schokoeis, kalter Kakao, Sahne</small></div>
-        <div class="menu-price">5,00 €</div>
-      </div>
-    </div>
 
-    <div class="menu-section">
-      <h3>👶 Kindereisbecher</h3>
-      <div class="menu-item"><div class="menu-text"><strong>Micky Maus Eis</strong><small>gemischtes Eis, Smartie s & Zuckerstreusel</small></div><div class="menu-price">5,00 €</div></div>
-      <div class="menu-item"><div class="menu-text"><strong>Pinocchio Eis</strong><small>gemischtes Eis, Smarties & Zuckerstreusel</small></div><div class="menu-price">5,00 €</div></div>
+      <!-- Kindereisbecher -->
+      <div class="menu-section">
+        <h3>👶 Kindereisbecher</h3>
+        <div class="menu-item"><div class="menu-text"><strong>Micky Maus Eis</strong><small>gemischtes Eis, Smarties & Zuckerstreusel</small></div><div class="menu-price">5,00 €</div></div>
+        <div class="menu-item"><div class="menu-text"><strong>Pinocchio Eis</strong><small>gemischtes Eis, Smarties & Zuckerstreusel</small></div><div class="menu-price">5,00 €</div></div>
+      </div>
+
     </div>
   </div>
 
+  <!-- FOOTER BANNER -->
   <div class="footer-banner">
     <h2>Kontakt</h2>
-    <p>📍 <a href="https://www.google.com/maps/place/Eis+da+Rosario/@52.5273251,13.7887609,17z/data=!3m2!4b1!5s0x47a8338ed1d6fd5f:0x5d55428520a408d1!4m6!3m5!1s0x47a833754fb76cad:0xb09fafc5c044a5c7!8m2!3d52.5273251!4d13.7913358!16s%2Fg%2F11y30cc8_0?entry=ttu" target="_blank">Hermannstraße 1, 15370 Petershagen/Eggersdorf</a></p>
+    <p>📍 <a href="https://www.google.com/maps/place/Eis+da+Rosario/@52.5273251,13.7887609,17z" target="_blank">Hermannstraße 1, 15370 Petershagen/Eggersdorf</a></p>
     <p>📞 <a href="tel:015784230125">01578 4230125</a></p>
     <p>📧 <a href="mailto:infoeiscafedarosario@gmail.com?subject=Anfrage&body=Guten%20Tag,">infoeiscafedarosario@gmail.com</a></p>
 
