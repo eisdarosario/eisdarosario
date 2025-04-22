@@ -19,19 +19,35 @@
 
     body {
       font-family: 'Hadley', sans-serif;
-      background: #ffffff; /* Colore di sfondo bianco */
-      color: #000000; /* Colore del testo nero */
+      background: #ffffff;
+      color: #000000;
       max-width: 900px;
       margin: auto;
-      padding: 20px;
+      padding: 0;
     }
 
-    h1 {
+    .banner {
+      background-color: #fff2d1;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .banner h1 {
       font-family: 'Malista', cursive;
       font-size: 3em;
-      color: #73cacb; /* Colore del titolo */
+      color: #73cacb;
+      margin: 0;
+    }
+
+    .slogan {
       text-align: center;
-      margin-top: 30px;
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+
+    h2 {
+      color: #73cacb;
+      margin-top: 40px;
     }
 
     .menu {
@@ -50,26 +66,25 @@
     .menu li {
       margin: 10px 0;
       font-size: 1.2em;
-      color: #000000; /* Colore del testo nero per gli item del menù */
     }
 
-    h2 {
-      color: #73cacb; /* Colore per le voci "Kontakt" e "Menù" */
+    .info-block {
+      background-color: #fff2d1;
+      border-radius: 12px;
+      padding: 20px;
       margin-top: 40px;
     }
 
-    .info {
-      margin-top: 30px;
+    .info-block p {
+      margin: 5px 0;
     }
 
-    /* Media Query per mobile */
+    /* Responsive */
     @media (max-width: 600px) {
-      body {
-        padding: 15px;
-      }
-      h1 {
+      .banner h1 {
         font-size: 2em;
       }
+
       .menu li {
         font-size: 1em;
       }
@@ -78,9 +93,14 @@
 </head>
 <body>
 
-  <h1>Eis da Rosario</h1>
-  <p style="text-align: center; color: #000000;">Gelati artigianali, sapori autentici 🍦</p>
+  <!-- Banner -->
+  <div class="banner">
+    <h1>Eis da Rosario</h1>
+  </div>
 
+  <p class="slogan">Gelati artigianali, sapori autentici 🍦</p>
+
+  <!-- Menù -->
   <h2>Menù gusti</h2>
   <div class="menu">
     <ul>
@@ -93,14 +113,15 @@
     </ul>
   </div>
 
-  <div class="info">
+  <!-- Info in fondo -->
+  <div class="info-block">
     <h2>Kontakt</h2>
-    <p>📍 Hermannstraße 1, 15370 Petershagen/Eggersdorf<br>
-       📞 01578 4230125<br>
-       📧 infoeiscafedarosario@gmail.com</p>
+    <p>📍 Hermannstraße 1, 15370 Petershagen/Eggersdorf</p>
+    <p>📞 01578 4230125</p>
+    <p>📧 infoeiscafedarosario@gmail.com</p>
 
     <h2>Öffnungszeiten</h2>
-    <p>Montag  - Sonntag: 11:00 - 18:00</p>
+    <p>Montag - Sonntag: 11:00 - 18:00</p>
   </div>
 
 </body>
