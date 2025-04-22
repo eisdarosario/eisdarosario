@@ -1,55 +1,164 @@
-<!-- Banner -->
-<div class="banner">
-  <h1>Eis da Rosario</h1>
-</div>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eis da Rosario</title>
 
-<!-- Contenuto centrato -->
-<div class="container">
-  <p class="slogan">Gelati artigianali, sapori autentici 🍦</p>
+  <style>
+    @font-face {
+      font-family: 'Malista';
+      src: url('Malista.otf') format('opentype');
+    }
 
-  <h2>Menù gusti</h2>
-  <div class="menu">
-    <ul>
-      <li>🍫 Cioccolato</li>
-      <li>🍦 Vaniglia</li>
-      <li>🍓 Fragola</li>
-      <li>🥭 Mango</li>
-      <li>🍋 Limone</li>
-      <li>🥥 Cocco</li>
-    </ul>
+    @font-face {
+      font-family: 'Hadley';
+      src: url('Hadley.otf') format('opentype');
+    }
+
+    body {
+      font-family: 'Hadley', sans-serif;
+      background: #ffffff;
+      color: #000000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .banner {
+      background-color: #fff2d1;
+      padding: 40px 20px;
+      text-align: center;
+      width: 100%;
+    }
+
+    .banner h1 {
+      font-family: 'Malista', cursive;
+      font-size: 3em;
+      color: #73cacb;
+      margin: 0;
+    }
+
+    .slogan {
+      text-align: center;
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #73cacb;
+      margin-top: 40px;
+    }
+
+    .menu {
+      background: #fff0e0;
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .menu ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .menu li {
+      margin: 10px 0;
+      font-size: 1.2em;
+    }
+
+    .info-block {
+      background-color: #fff2d1;
+      padding: 40px 20px;
+      text-align: center;
+      width: 100%;
+      margin-top: 40px;
+    }
+
+    .info-block a {
+      color: #000000;
+      text-decoration: underline;
+    }
+
+    .info-block form {
+      margin-top: 20px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .info-block input,
+    .info-block textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-family: inherit;
+    }
+
+    .info-block button {
+      padding: 10px 20px;
+      background-color: #73cacb;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .info-block button:hover {
+      background-color: #5db7b8;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Banner in alto -->
+  <div class="banner">
+    <h1>Eis da Rosario</h1>
   </div>
-</div>
 
-<!-- Blocco info + orari -->
-<div class="info-block">
-  <h2>Kontakt</h2>
-  <p>
-    📍 <a href="https://www.google.com/maps/dir//Hermannstraße+1,+15370+Petershagen/Eggersdorf" 
-          target="_blank" style="color: #000000; text-decoration: underline;">
-      Hermannstraße 1, 15370 Petershagen/Eggersdorf
-    </a>
-  </p>
-  <p>
-    📞 <a href="tel:015784230125" style="color: #000000; text-decoration: underline;">
-      01578 4230125
-    </a>
-  </p>
-  <p>
-    📧 <a href="mailto:infoeiscafedarosario@gmail.com" style="color: #000000; text-decoration: underline;">
-      infoeiscafedarosario@gmail.com
-    </a>
-  </p>
+  <!-- Contenuto centrale -->
+  <div class="container">
+    <p class="slogan">Gelati artigianali, sapori autentici 🍦</p>
 
-  <h3>Scrivici un messaggio</h3>
-  <form action="mailto:infoeiscafedarosario@gmail.com" method="POST" enctype="text/plain">
-    <input type="text" name="Nome" placeholder="Il tuo nome" required style="width: 100%; padding: 10px; margin-bottom: 10px;" />
-    <input type="email" name="Email" placeholder="La tua email" required style="width: 100%; padding: 10px; margin-bottom: 10px;" />
-    <textarea name="Messaggio" placeholder="Scrivi qui il tuo messaggio..." required style="width: 100%; padding: 10px; height: 100px; margin-bottom: 10px;"></textarea>
-    <button type="submit" style="padding: 10px 20px; background-color: #73cacb; color: #ffffff; border: none; border-radius: 5px; cursor: pointer;">
-      Invia messaggio
-    </button>
-  </form>
+    <h2>Menù gusti</h2>
+    <div class="menu">
+      <ul>
+        <li>🍫 Cioccolato</li>
+        <li>🍦 Vaniglia</li>
+        <li>🍓 Fragola</li>
+        <li>🥭 Mango</li>
+        <li>🍋 Limone</li>
+        <li>🥥 Cocco</li>
+      </ul>
+    </div>
+  </div>
 
-  <h2>Öffnungszeiten</h2>
-  <p>Montag - Sonntag: 11:00 - 18:00</p>
-</div>
+  <!-- Contatti e orari -->
+  <div class="info-block">
+    <h2>Kontakt</h2>
+    <p>
+      📍 <a href="https://www.google.com/maps/dir//Hermannstraße+1,+15370+Petershagen/Eggersdorf" target="_blank">
+        Hermannstraße 1, 15370 Petershagen/Eggersdorf
+      </a>
+    </p>
+    <p>
+      📞 <a href="tel:015784230125">01578 4230125</a>
+    </p>
+    <p>
+      📧 <a href="mailto:infoeiscafedarosario@gmail.com">infoeiscafedarosario@gmail.com</a>
+    </p>
+
+    <h2>Öffnungszeiten</h2>
+    <p>Montag - Sonntag: 11:00 - 18:00</p>
+  </div>
+
+</body>
+</html>
