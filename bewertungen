@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bewertungen - Eis da Rosario</title>
+
+  <style>
+    @font-face {
+      font-family: 'Hadley';
+      src: url('Hadley.otf') format('opentype');
+    }
+
+    @font-face {
+      font-family: 'Malista';
+      src: url('Malista.otf') format('opentype');
+    }
+
+    body {
+      font-family: 'Hadley', sans-serif;
+      background: #fff7f0;
+      color: #000000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #fff2d1;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .header h1 {
+      font-family: 'Malista', cursive;
+      font-size: 3em;
+      color: #73cacb;
+      margin: 0;
+    }
+
+    .navbar {
+      background-color: #73cacb;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2em;
+      margin: 0 15px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .navbar a:hover {
+      background-color: #60b1b1;
+    }
+
+    .content {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .content h2 {
+      font-family: 'Malista', cursive;
+      font-size: 2.5em;
+      color: #73cacb;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .review-box {
+      background-color: #fff2d1;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+
+    .review-item {
+      padding: 10px 0;
+      border-bottom: 1px dashed #ccc;
+    }
+
+    .review-item:last-child {
+      border-bottom: none;
+    }
+
+    .review-item .review-text {
+      font-size: 1.1em;
+      color: #000000;
+    }
+
+    .review-item .review-author {
+      font-size: 0.9em;
+      color: #73cacb;
+      font-style: italic;
+    }
+
+    .review-form {
+      background-color: #fff2d1;
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .review-form input,
+    .review-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+
+    .review-form button {
+      padding: 10px 20px;
+      background-color: #73cacb;
+      color: white;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .review-form button:hover {
+      background-color: #60b1b1;
+    }
+
+    footer {
+      background-color: #fff2d1;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    footer p {
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header con link al ritorno alla Home -->
+  <div class="header" onclick="window.location.href='home.html'">
+    <h1>Eis da Rosario</h1>
+  </div>
+
+  <!-- Barra di navigazione -->
+  <div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="bewertungen.html">Bewertungen</a>
+  </div>
+
+  <!-- Contenuto principale della pagina Bewertungen -->
+  <div class="content">
+    <h2>Bewertungen</h2>
+
+    <!-- Sezione Recensioni -->
+    <div class="review-box">
+      <div class="review-item">
+        <div class="review-text">"Il miglior gelato che abbia mai mangiato! Ottimo servizio e gusti incredibili!"</div>
+        <div class="review-author">- Maria Rossi</div>
+      </div>
+      <div class="review-item">
+        <div class="review-text">"Ambiente accogliente, perfetto per una pausa estiva. Super consigliato!"</div>
+        <div class="review-author">- Luca Bianchi</div>
+      </div>
+      <div class="review-item">
+        <div class="review-text">"Gelato artigianale davvero buono, mi sono trovata benissimo!"</div>
+        <div class="review-author">- Giulia Verdi</div>
+      </div>
+    </div>
+
+    <!-- Sezione Aggiungi Recensione -->
+    <div class="review-form">
+      <h3>Aggiungi la tua recensione</h3>
+      <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Il tuo nome" required />
+        <textarea name="review" rows="5" placeholder="La tua recensione" required></textarea>
+        <button type="submit">Invia Recensione</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Eis da Rosario</p>
+  </footer>
+
+</body>
+</html>
