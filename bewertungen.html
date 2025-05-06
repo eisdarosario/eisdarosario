@@ -18,7 +18,7 @@
 
     body {
       font-family: 'Hadley', sans-serif;
-      background: #fff7f0;
+      background: #ffffff; /* Bianco */
       color: #000000;
       margin: 0;
       padding: 0;
@@ -57,33 +57,6 @@
       background-color: #60b1b1;
     }
 
-    .content {
-      max-width: 900px;
-      margin: auto;
-      padding: 30px 20px;
-    }
-
-    .content h2 {
-      font-family: 'Malista', cursive;
-      font-size: 2.5em;
-      color: #73cacb;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    .review {
-      background-color: #ffffff;
-      border-radius: 10px;
-      padding: 20px;
-      margin: 0 auto 30px auto;
-      max-width: 800px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-
-    .review p {
-      margin: 10px 0;
-    }
-
     .footer-banner {
       background-color: #fff2d1;
       text-align: center;
@@ -103,11 +76,67 @@
       font-size: 1.1em;
       margin: 5px 0;
     }
+
+    .review-section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .review-section h2 {
+      font-family: 'Malista', cursive;
+      font-size: 2.5em;
+      color: #73cacb;
+    }
+
+    .review-section p {
+      font-family: 'Hadley', sans-serif;
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+
+    .review {
+      background-color: #fff2d1;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 0 auto 30px auto;
+      max-width: 800px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .review p {
+      margin: 10px 0;
+    }
+
+    .review .stars {
+      font-size: 1.5em;
+      color: #f5b301;
+    }
+
+    .review-author {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .google-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 25px;
+      background-color: #73cacb;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-family: 'Hadley';
+    }
+
+    .google-button:hover {
+      background-color: #60b1b1;
+    }
   </style>
 </head>
 <body>
 
-  <!-- Header con link alla Home -->
+  <!-- HEADER -->
   <div class="header">
     <a href="home.html" style="text-decoration: none; color: inherit;">
       <h1>Eis da Rosario</h1>
@@ -115,7 +144,7 @@
     </a>
   </div>
 
-  <!-- Navbar -->
+  <!-- NAVBAR -->
   <div class="navbar">
     <a href="home.html">Home</a>
     <a href="menu.html">Menu</a>
@@ -124,38 +153,38 @@
   </div>
 
   <!-- SEZIONE BEWERTUNGEN -->
-  <div id="bewertungen" style="background-color:#fff2d1; padding: 40px 20px; text-align: center;">
-    <h2 style="font-family: 'Malista', cursive; font-size: 2.5em; color: #73cacb;">Bewertungen ⭐</h2>
-    <p style="font-family: 'Hadley', sans-serif; font-size: 1.2em; margin-bottom: 30px;">Was unsere Kunden über uns sagen</p>
+  <div class="review-section">
+    <h2>Bewertungen ⭐</h2>
+    <p>Was unsere Kunden über uns sagen</p>
 
     <div class="review">
-      <p style="font-size: 1.5em; color: #f5b301;">★★★★★</p>
+      <p class="stars">★★★★★</p>
       <p>"Leckeres Eis, humane Preise und ein gut aufgelegter Chef, das Anhalten hier lohnt sich."</p>
-      <p style="font-weight: bold;">– Christian Brennecke</p>
+      <p class="review-author">– Christian Brennecke</p>
     </div>
 
     <div class="review">
-      <p style="font-size: 1.5em; color: #f5b301;">★★★★☆</p>
+      <p class="stars">★★★★☆</p>
       <p>"Das Eis war ok. Kugel 1,70€ wie derzeit fast überall. Das Personal war freundlich, hatte jedoch sehr viel zu tun."</p>
-      <p style="font-weight: bold;">– Jinni Jinnetti</p>
+      <p class="review-author">– Jinni Jinnetti</p>
     </div>
 
     <div class="review">
-      <p style="font-size: 1.5em; color: #f5b301;">★★★★★</p>
+      <p class="stars">★★★★★</p>
       <p>"Super leckeres Eis und sehr freundlicher Service! Kommen gerne wieder."</p>
-      <p style="font-weight: bold;">– Anna S.</p>
+      <p class="review-author">– Anna S.</p>
     </div>
 
     <div class="review">
-      <p style="font-size: 1.5em; color: #f5b301;">★★★★★</p>
+      <p class="stars">★★★★★</p>
       <p>"Tolles Café mit kreativen Eisbechern und guter Musik."</p>
-      <p style="font-weight: bold;">– Max M.</p>
+      <p class="review-author">– Max M.</p>
     </div>
 
-    <!-- Bottone centrale -->
+    <!-- Google Rezension Button -->
     <a href="https://www.google.com/maps/place/Eis+da+Rosario/@52.5272654,13.7886178,17z/data=!3m1!4b1!4m6!3m5!1s0x47a833754fb76cad:0xb09fafc5c044a5c7!8m2!3d52.5273251!4d13.7913358"
        target="_blank"
-       style="display: inline-block; margin-top: 30px; padding: 12px 25px; background-color: #73cacb; color: white; border-radius: 8px; text-decoration: none; font-weight: bold; font-family: 'Hadley';">
+       class="google-button">
       ✍️ Eine Bewertung auf Google schreiben
     </a>
   </div>
