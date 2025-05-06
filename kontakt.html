@@ -18,7 +18,7 @@
 
     body {
       font-family: 'Hadley', sans-serif;
-      background: #fff7f0;
+      background: #ffffff;
       color: #000000;
       margin: 0;
       padding: 0;
@@ -57,127 +57,90 @@
       background-color: #60b1b1;
     }
 
-    .content {
-      max-width: 900px;
-      margin: auto;
-      padding: 30px 20px;
+    .contact-section {
+      max-width: 700px;
+      margin: 50px auto;
+      padding: 30px;
+      background-color: #fff2d1;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
     }
 
-    .content h2 {
+    .contact-section h2 {
       font-family: 'Malista', cursive;
       font-size: 2.5em;
       color: #73cacb;
       margin-bottom: 20px;
-      text-align: center;
     }
 
-    .contact-info {
-      background-color: #fff2d1;
-      padding: 20px;
-      border-radius: 12px;
-      margin-bottom: 30px;
+    .contact-section p {
+      font-size: 1.1em;
+      margin: 15px 0;
     }
 
-    .contact-info p {
-      font-size: 1.2em;
-      margin-bottom: 10px;
-    }
-
-    .contact-info a {
-      color: #73cacb;
+    .contact-section a {
+      color: #000000;
       text-decoration: none;
     }
 
-    .contact-info a:hover {
+    .contact-section a:hover {
       text-decoration: underline;
     }
 
-    .contact-form {
-      background-color: #fff2d1;
-      padding: 20px;
-      border-radius: 12px;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      font-size: 1em;
-    }
-
-    .contact-form button {
-      padding: 10px 20px;
-      background-color: #73cacb;
-      color: white;
-      font-size: 1.1em;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    .contact-form button:hover {
-      background-color: #60b1b1;
-    }
-
-    footer {
+    .footer-banner {
       background-color: #fff2d1;
       text-align: center;
-      padding: 20px;
+      padding: 40px 20px;
       margin-top: 40px;
     }
 
-    footer p {
+    .footer-banner h2 {
+      font-family: 'Malista', cursive;
+      font-size: 1.8em;
+      color: #73cacb;
+      margin-bottom: 10px;
+    }
+
+    .footer-banner p {
+      font-family: 'Hadley', sans-serif;
       font-size: 1.1em;
+      margin: 5px 0;
     }
   </style>
 </head>
 <body>
 
-  <!-- Header con link al ritorno alla Home -->
+  <!-- Header -->
   <div class="header">
-  <a href="home.html" style="text-decoration: none; color: inherit;">
-    <h1>Eis da Rosario</h1>
-    <p>Handwerklich hergestelltes Speiseeis, authentische Geschmacksrichtungen🍦</p>
-  </a>
-</div>
+    <a href="home.html" style="text-decoration: none; color: inherit;">
+      <h1>Eis da Rosario</h1>
+      <p>Handwerklich hergestelltes Speiseeis, authentische Geschmacksrichtungen🍦</p>
+    </a>
+  </div>
 
-
-  <!-- Barra di navigazione -->
+  <!-- Navbar -->
   <div class="navbar">
-  <a href="home.html">Home</a>
-  <a href="menu.html">Menu</a>
-  <a href="bewertungen.html">Bewertungen</a>
-  <a href="kontakt.html">Kontakt</a>
-</div>
+    <a href="home.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="bewertungen.html">Bewertungen</a>
+    <a href="kontakt.html">Kontakt</a>
+  </div>
 
-  <!-- Contenuto principale della pagina Kontakt -->
-  <div class="content">
-    <h2>Kontaktiere uns</h2>
+  <!-- Kontakt Section -->
+  <div class="contact-section">
+    <h2>Kontakt</h2>
+    <p>📍 <a href="https://www.google.com/maps/place/Eis+da+Rosario/@52.5272654,13.7886178,17z" target="_blank">Hermannstraße 1, 15370 Petershagen/Eggersdorf</a></p>
+    <p>📞 <a href="tel:015784230125">01578 4230125</a></p>
+    <p>📧 <a href="mailto:infoeiscafedarosario@gmail.com?subject=Anfrage&body=Guten%20Tag,">infoeiscafedarosario@gmail.com</a></p>
+  </div>
 
-    <!-- Sezione Info di Contatto -->
-    <div class="contact-info">
-  <p>📍 <a href="https://www.google.com/maps/place/Eis+da+Rosario/@52.5272654,13.7886178,17z/data=!3m1!5s0x47a8338ed1d6fd5f:0x5d55428520a408d1!4m6!3m5!1s0x47a833754fb76cad:0xb09fafc5c044a5c7!8m2!3d52.5273251!4d13.7913358!16s%2Fg%2F11y30cc8_0?entry=ttu" target="_blank">Hermannstraße 1, 15370 Petershagen/Eggersdorf</a></p>
-  <p>📞 <a href="tel:015784230125">01578 4230125</a></p>
-  <p>📧 <a href="mailto:infoeiscafedarosario@gmail.com?subject=Anfrage&amp;body=Guten%20Tag,">infoeiscafedarosario@gmail.com</a></p>
-</div>
-    
-</div>
-
-  
-  <!-- FOOTER BANNER -->
+  <!-- Footer -->
   <div class="footer-banner">
     <h2>Öffnungszeiten</h2>
     <p>Montag – Sonntag: 11:00 – 18:00</p>
-
-    
-    
-    
     <p>&copy; 2025 Eis da Rosario</p>
   </div>
-  
+
 </body>
 </html>
